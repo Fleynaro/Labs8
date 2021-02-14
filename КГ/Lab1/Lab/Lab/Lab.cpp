@@ -97,7 +97,7 @@ bool createShaderProgram()
         "}"
         ;
 
-    #define SHADER 2
+    #define SHADER 23
 #if SHADER == 1
     //из практики
     const GLchar fsh[] =
