@@ -7,14 +7,17 @@ from sklearn.model_selection import train_test_split
 
 # кластеризатор
 class KNearestNeighbors:
-    def __init__(self, X_train, y_train, k):
-        self.X_train = X_train
-        self.y_train = y_train
+    def __init__(self, k):
         self.k = k
         self.metric_func = lambda x, y: ((x - y) ** 2).sum()
 
+    def train(self, X_train, y_train):
+        self.X_train = X_train
+        self.y_train = y_train
+
     def predict(self, sample):
-        indexes = self.X_train.apply(lambda row: self.metric_func(row, sample), axis=1).to_frame().sort_values(0).head(self.k).index
+        indexes = self.X_train.apply(lambda row: self.metric_func(row, sample), axis=1).to_frame().sort_values(0).head(
+            self.k).index
         return self.y_train[indexes].value_counts().idxmax()
 
     def predict_test_set(self, X_test):
@@ -31,10 +34,12 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
 
     # кластеризация
-    classifier = KNearestNeighbors(X, y, 5)
+    classifier = KNearestNeighbors(5)
+    classifier.train(X_train, y_train)
     predicted = classifier.predict_test_set(X_test)
     accuracy = (y_test == predicted).mean()
     print(f'accuracy = {accuracy}')
+
 
 if __name__ == "__main__":
     main()
