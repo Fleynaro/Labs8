@@ -1,0 +1,9 @@
+﻿  Lab.cpp
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(207,31): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(208,37): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(209,43): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(210,43): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(211,37): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(212,31): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab2\Lab\Lab\Lab.cpp(228,38): warning C4267: '=': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Lab.vcxproj -> R:\Labs8\КГ\Lab2\Lab\x64\Debug\Lab.exe
