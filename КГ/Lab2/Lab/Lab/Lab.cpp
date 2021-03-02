@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <chrono>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp> // glm::vec3
@@ -17,6 +18,8 @@ GLFWwindow* g_window;
 GLuint g_shaderProgram;
 GLint g_uMV;
 GLint g_uMVP;
+GLint g_uA;
+GLint g_uB;
 
 class Model
 {
@@ -96,12 +99,25 @@ bool createShaderProgram()
         ""
         "uniform mat4 u_mvp;"
         "uniform mat4 u_mv;"
+        "uniform float u_a;"
+        "uniform float u_b;"
         ""
         "out vec3 v_normal;"
         "out vec3 v_pos;"
         ""
-        "float f(vec2 p) { return sin(p.x) * cos(p.y); }"
-        "vec3 grad(vec2 p) { return vec3(-cos(p.x) * cos(p.y), 1.0, sin(p.x) * sin(p.y)); };"
+
+        //"float f(vec2 p) { return sin(p.x) * cos(p.y); }"
+        //"vec3 grad(vec2 p) { return vec3(-cos(p.x) * cos(p.y), 1.0, sin(p.x) * sin(p.y)); };"
+
+        //"float f(vec2 p) { return 1.5 * atan(2.0 * p.x * p.y); }"
+        //"vec3 grad(vec2 p) { return vec3(-3*p.y/(4*p.x*p.x * p.y*p.y + 1), 1.0, -3*p.x/(4*p.x*p.x * p.y*p.y + 1)); };"
+
+        "float f(vec2 p) { return u_a * atan(u_b * p.x * p.y); }"
+        "vec3 grad(vec2 p) { return vec3(-u_a*u_b*p.y/(u_b*u_b*p.x*p.x * p.y*p.y + 1), 1.0, -u_a*u_b*p.x/(u_b*u_b*p.x*p.x * p.y*p.y + 1)); };"
+
+        //"float f(vec2 p) { return 1.5 * (1 - p.x * p.y) * sin(1 - p.x * p.y); }"
+        //"vec3 grad(vec2 p) { return vec3(p.y * (1.5 - 1.5 * p.x * p.y) * cos(1 - p.x * p.y) + 1.5 * z * sin(1 - p.x * p.y), 1, p.x * (1.5 - 1.5 * p.x * p.y) * cos(1 - p.x * p.y) + 1.5 * x * sin(1 - p.x * p.y)); };"
+
         ""
         "void main()"
         "{"
@@ -130,44 +146,14 @@ bool createShaderProgram()
         "   vec3 E = vec3(0, 0, 0);"
         "   vec3 L = vec3(5, 5, 0);"
         "   vec3 l = normalize(v_pos - L);"
-        "   float d = max(dot(n, -l), 0.1);"
+        "   float d = max(dot(n, -l), 0.3);"
         "   vec3 e = normalize(E - v_pos);"
         "   vec3 h = normalize(-l + e);"
         "   float s = pow(max(dot(n, h), 0.0), S);"
         "   o_color = vec4(color * d + s * vec3(1, 1, 1), 1);"
         "}"
         ;
-
-    const GLchar vsh2[] =
-        "#version 330\n"
-        ""
-        "layout(location = 0) in vec3 a_position;"
-        "layout(location = 1) in vec3 a_color;"
-        ""
-        "uniform mat4 u_mvp;"
-        ""
-        "out vec3 v_color;"
-        ""
-        "void main()"
-        "{"
-        "    v_color = a_color;"
-        "    gl_Position = u_mvp * vec4(a_position, 1.0);"
-        "}"
-        ;
-
-    const GLchar fsh2[] =
-        "#version 330\n"
-        ""
-        "in vec3 v_color;"
-        ""
-        "layout(location = 0) out vec4 o_color;"
-        ""
-        "void main()"
-        "{"
-        "   o_color = vec4(v_color, 1.0);"
-        "}"
-        ;
-
+    
     GLuint vertexShader, fragmentShader;
 
     vertexShader = createShader(vsh, GL_VERTEX_SHADER);
@@ -177,6 +163,8 @@ bool createShaderProgram()
 
     g_uMVP = glGetUniformLocation(g_shaderProgram, "u_mvp");
     g_uMV = glGetUniformLocation(g_shaderProgram, "u_mv");
+    g_uA = glGetUniformLocation(g_shaderProgram, "u_a");
+    g_uB = glGetUniformLocation(g_shaderProgram, "u_b");
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
@@ -213,7 +201,6 @@ bool createGrid(size_t N = 100)
         }
     }
 
-
     glGenVertexArrays(1, &g_model.vao);
     glBindVertexArray(g_model.vao);
 
@@ -233,72 +220,6 @@ bool createGrid(size_t N = 100)
     return g_model.vbo != 0 && g_model.ibo != 0 && g_model.vao != 0;
 }
 
-bool createModel()
-{
-    const GLfloat vertices[] =
-    {
-        -1.0, -1.0, 1.0, 1.0, 0.0, 0.0,
-        1.0, -1.0, 1.0, 1.0, 0.0, 0.0,
-        1.0, 1.0, 1.0, 1.0, 0.0, 0.0,
-        -1.0, 1.0, 1.0, 1.0, 0.0, 0.0,
-
-        1.0, -1.0, 1.0, 1.0, 1.0, 0.0,
-        1.0, -1.0, -1.0, 1.0, 1.0, 0.0,
-        1.0, 1.0, -1.0, 1.0, 1.0, 0.0,
-        1.0, 1.0, 1.0, 1.0, 1.0, 0.0,
-
-        1.0, 1.0, 1.0, 1.0, 0.0, 1.0,
-        1.0, 1.0, -1.0, 1.0, 0.0, 1.0,
-        -1.0, 1.0, -1.0, 1.0, 0.0, 1.0,
-        -1.0, 1.0, 1.0, 1.0, 0.0, 1.0,
-
-        -1.0, 1.0, 1.0, 0.0, 1.0, 1.0,
-        -1.0, 1.0, -1.0, 0.0, 1.0, 1.0,
-        -1.0, -1.0, -1.0, 0.0, 1.0, 1.0,
-        -1.0, -1.0, 1.0, 0.0, 1.0, 1.0,
-
-        -1.0, -1.0, 1.0, 0.0, 1.0, 0.0,
-        -1.0, -1.0, -1.0, 0.0, 1.0, 0.0,
-        1.0, -1.0, -1.0, 0.0, 1.0, 0.0,
-        1.0, -1.0, 1.0, 0.0, 1.0, 0.0,
-
-        -1.0, -1.0, -1.0, 0.0, 0.0, 1.0,
-        -1.0, 1.0, -1.0, 0.0, 0.0, 1.0,
-        1.0, 1.0, -1.0, 0.0, 0.0, 1.0,
-        1.0, -1.0, -1.0, 0.0, 0.0, 1.0,
-    };
-
-    const GLuint indices[] =
-    {
-        0, 1, 2, 2, 3, 0,
-        4, 5, 6, 6, 7, 4,
-        8, 9, 10, 10, 11, 8,
-        12, 13, 14, 14, 15, 12,
-        16, 17, 18, 18, 19, 16,
-        20, 21, 22, 22, 23, 20
-    };
-
-    glGenVertexArrays(1, &g_model.vao);
-    glBindVertexArray(g_model.vao);
-
-    glGenBuffers(1, &g_model.vbo);
-    glBindBuffer(GL_ARRAY_BUFFER, g_model.vbo);
-    glBufferData(GL_ARRAY_BUFFER, 24 * 6 * sizeof(GLfloat), vertices, GL_STATIC_DRAW);
-
-    glGenBuffers(1, &g_model.ibo);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, g_model.ibo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * 6 * sizeof(GLuint), indices, GL_STATIC_DRAW);
-
-    g_model.indexCount = 6 * 6;
-
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (const GLvoid*)0);
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (const GLvoid*)(3 * sizeof(GLfloat)));
-
-    return g_model.vbo != 0 && g_model.ibo != 0 && g_model.vao != 0;
-}
-
 bool init()
 {
     // Set initial color of color buffer to white.
@@ -314,9 +235,11 @@ void reshape(GLFWwindow* window, int width, int height)
     glViewport(0, 0, width, height);
 }
 
-GLfloat step = 0.0;
-void draw()
+void draw(GLfloat p)
 {
+    GLfloat model_rotation_angle = p / 8.0;
+    GLfloat model_animation_period = p / 4.0;
+
     // Clear color buffer.
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -325,7 +248,7 @@ void draw()
 
     glm::mat4 Model = glm::mat4(1.0f);
     Model = glm::translate(Model, glm::vec3(0.0, -4.0, -10.0f));
-    Model = glm::rotate(Model, glm::radians(step), glm::vec3(0.0f, 1.0f, 0.0f));
+    Model = glm::rotate(Model, model_rotation_angle, glm::vec3(0.0f, 1.0f, 0.0f));
     Model = glm::scale(Model, glm::vec3(2.0f));
 
     glm::mat4 View = glm::mat4(1.0f);
@@ -335,9 +258,11 @@ void draw()
 
     glUniformMatrix4fv(g_uMVP, 1, GL_FALSE, glm::value_ptr(Projection * View * Model));
     glUniformMatrix4fv(g_uMV, 1, GL_FALSE, glm::value_ptr(View * Model));
+
+    glUniform1f(g_uA, 1.5);
+    glUniform1f(g_uB, abs(cos(model_animation_period)) + 0.5);
     
     glDrawElements(GL_TRIANGLES, g_model.indexCount, GL_UNSIGNED_INT, NULL);
-    step += 0.5;
 }
 
 void cleanup()
@@ -415,16 +340,31 @@ int main()
 
     if (isOk)
     {
+        GLfloat p = 0.0;
+        const GLfloat delta_p = glm::pi<GLfloat>();
+        long long time_to_render_frame = 0.0;
+
         // Main loop until window closed or escape pressed.
         while (glfwGetKey(g_window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(g_window) == 0)
         {
+            auto t1 = std::chrono::high_resolution_clock::now();
+            
+            //Animation.
+            p += time_to_render_frame * delta_p / 1000.0f;
+            if (p > 1024 * glm::pi<GLfloat>()) {
+                p -= 1024 * glm::pi<GLfloat>();
+            }
+
             // Draw scene.
-            draw();
+            draw(p);
 
             // Swap buffers.
             glfwSwapBuffers(g_window);
             // Poll window events.
             glfwPollEvents();
+
+            auto t2 = std::chrono::high_resolution_clock::now();
+            time_to_render_frame = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
         }
     }
 
