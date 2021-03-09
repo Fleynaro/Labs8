@@ -114,6 +114,8 @@ bool createShaderProgram()
 
         "float f(vec2 p) { return u_a * atan(u_b * p.x * p.y); }"
         "vec3 grad(vec2 p) { return vec3(-u_a*u_b*p.y/(u_b*u_b*p.x*p.x * p.y*p.y + 1), 1.0, -u_a*u_b*p.x/(u_b*u_b*p.x*p.x * p.y*p.y + 1)); };"
+        //"float f(vec2 p) { return 0.0; }"
+        //"vec3 grad(vec2 p) { return vec3(0, 1, 0); };"
 
         //"float f(vec2 p) { return 1.5 * (1 - p.x * p.y) * sin(1 - p.x * p.y); }"
         //"vec3 grad(vec2 p) { return vec3(p.y * (1.5 - 1.5 * p.x * p.y) * cos(1 - p.x * p.y) + 1.5 * z * sin(1 - p.x * p.y), 1, p.x * (1.5 - 1.5 * p.x * p.y) * cos(1 - p.x * p.y) + 1.5 * x * sin(1 - p.x * p.y)); };"
@@ -179,25 +181,24 @@ bool createGrid(size_t N = 100)
 
     auto vertices = new GLfloat[verticesCount * 2];
     auto indices = new GLuint[indicesCount];
-    GLuint idx_tpl[6] = { 0, 1, 2, 2, 3, 0 };
-
+    
     for (size_t i = 0; i < N + 1; i++) {
         for (size_t j = 0; j < N + 1; j++) {
             auto vertex = &vertices[(i * (N + 1) + j) * 2];
-            vertex[0] = GLfloat(i) / (N + 1) - 0.5f;
-            vertex[1] = GLfloat(j) / (N + 1) - 0.5f;
+            vertex[0] = GLfloat(j) / N - 0.5f;
+            vertex[1] = GLfloat(i) / N - 0.5f;
         }
     }
 
     for (size_t i = 0; i < N; i++) {
         for (size_t j = 0; j < N; j++) {
             auto idx = &indices[(i * N + j) * 6];
-            idx[0] = i * N + j;
-            idx[1] = i * N + (j + 1);
-            idx[2] = (i + 1) * N + (j + 1);
-            idx[3] = (i + 1) * N + (j + 1);
-            idx[4] = (i + 1) * N + j;
-            idx[5] = i * N + j;
+            idx[0] = i * (N + 1) + j;
+            idx[1] = i * (N + 1) + (j + 1);
+            idx[2] = (i + 1) * (N + 1) + (j + 1);
+            idx[3] = (i + 1) * (N + 1) + (j + 1);
+            idx[4] = (i + 1) * (N + 1) + j;
+            idx[5] = i * (N + 1) + j;
         }
     }
 
@@ -216,6 +217,9 @@ bool createGrid(size_t N = 100)
 
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (const GLvoid*)0);
+
+    delete[] vertices;
+    delete[] indices;
 
     return g_model.vbo != 0 && g_model.ibo != 0 && g_model.vao != 0;
 }
@@ -249,7 +253,7 @@ void draw(GLfloat p)
     glm::mat4 Model = glm::mat4(1.0f);
     Model = glm::translate(Model, glm::vec3(0.0, -4.0, -10.0f));
     Model = glm::rotate(Model, model_rotation_angle, glm::vec3(0.0f, 1.0f, 0.0f));
-    Model = glm::scale(Model, glm::vec3(2.0f));
+    Model = glm::scale(Model, glm::vec3(5.0f));
 
     glm::mat4 View = glm::mat4(1.0f);
     View = glm::rotate(View, glm::radians(20.0f), glm::vec3(1.0f, 0.0f, 0.0f));
