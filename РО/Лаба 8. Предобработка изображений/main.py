@@ -1,11 +1,12 @@
 import multiprocessing
 import os
 import cv2
+import re
 import numpy as np
 import matplotlib.pyplot as plt
 from glob import glob
 
-N = 50
+N = 100
 processors_count = 1
 process_idx = 0
 
@@ -22,25 +23,25 @@ def get_all_images(dir):
     return symbol_files
 
 
-def crop_image(img):
+def crop_image(img, threshold):
     crop_left = 0
     crop_right = 0
     crop_up = 0
     crop_down = 0
     for i in range(img.shape[1]):
-        if img[:, i].sum() != 0:
+        if img[:, i].sum() > threshold:
             crop_left = i
             break
     for i in reversed(range(img.shape[1])):
-        if img[:, i].sum() != 0:
+        if img[:, i].sum() > threshold:
             crop_right = i + 1
             break
     for i in range(img.shape[0]):
-        if img[i, :].sum() != 0:
+        if img[i, :].sum() > threshold:
             crop_up = i
             break
     for i in reversed(range(img.shape[0])):
-        if img[i, :].sum() != 0:
+        if img[i, :].sum() > threshold:
             crop_down = i + 1
             break
     return img[crop_up:crop_down, crop_left:crop_right]
@@ -55,11 +56,11 @@ def process_image(src_img):
         im_bw[:, :] = (src_img.max(axis=2) > 0) * 255
     else:
         _, im_bw = cv2.threshold(im_bw, im_bw.mean(), 255, cv2.THRESH_BINARY)
-        if im_bw[0, 0] == 255:
+        if im_bw[-1, -1] == 255:
             im_bw = cv2.bitwise_not(im_bw)
 
     # вырезаем символ
-    cropped_img = crop_image(im_bw)
+    cropped_img = crop_image(im_bw, 1000)
 
     # ресайзим до NxN
     new_size = (N * cropped_img.shape[1] // max(cropped_img.shape),
@@ -82,23 +83,30 @@ def work(i):
     processed_images = {}
     for symbol, filenames in symbol_files.items():
         for filename in filenames:
-            print(filename)
+            print(f'image {filename} process...')
             img = cv2.imread(filename, cv2.IMREAD_UNCHANGED)
             if img is None:
-                print('warning: image not opened.')
-                continue
+                print(f'warning: image {filename} not opened. renaming...')
+                new_filename = re.sub(r'[А-я]+', '', filename)
+                os.rename(filename, new_filename)
+                img = cv2.imread(new_filename, cv2.IMREAD_UNCHANGED)
+                if img is None:
+                    print('fail.')
+                    continue
             result_img = process_image(img)
             if symbol not in processed_images:
                 processed_images[symbol] = []
-            processed_images[symbol].append(result_img)
+            processed_images[symbol].append((filename, result_img))
 
     for symbol, images in processed_images.items():
         symbol_dir = f'processed\\{symbol}'
         if not os.path.exists(symbol_dir):
             os.makedirs(symbol_dir)
-        for i, img in enumerate(images):
+        for i, (src_filename, img) in enumerate(images):
             img_id = str(10000 + i)[1:]
-            cv2.imwrite(f'{symbol_dir}\\{img_id}.png', img)
+            dst_filename = f'{symbol_dir}\\{img_id}.png'
+            print(f'{src_filename} -> {dst_filename}'.replace('\\', '/'))
+            cv2.imwrite(dst_filename, img)
 
 
 def main():
