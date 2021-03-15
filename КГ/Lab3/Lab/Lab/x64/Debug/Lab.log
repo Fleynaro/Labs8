@@ -1,0 +1,15 @@
+﻿  Lab.cpp
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(199,35): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(200,35): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(207,37): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(208,43): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(209,49): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(210,49): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(211,43): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(212,37): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(227,38): warning C4267: '=': conversion from 'size_t' to 'GLsizei', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(293,34): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(294,36): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(316,56): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+R:\Labs8\КГ\Lab3\Lab\Lab\Lab.cpp(410,40): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+  Lab.vcxproj -> R:\Labs8\КГ\Lab3\Lab\x64\Debug\Lab.exe
