@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from glob import glob
 
-N = 100
+N = 15
 processors_count = 1
 process_idx = 0
 
