@@ -1,0 +1,37 @@
+﻿  main.cpp
+R:\Labs8\КГ\Lab4\Lab\Lab\Shader.h(57,40): warning C4101: 'e': unreferenced local variable
+R:\Labs8\КГ\Lab4\Lab\Lab\Mesh.h(91,1): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\tbezier\tbezier.h(177,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\tbezier\tbezier.h(247,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(152,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(153,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(154,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(155,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(156,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(157,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(271,40): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+  Lab.vcxproj -> R:\Labs8\КГ\Lab4\Lab\x64\Debug\Lab.exe
