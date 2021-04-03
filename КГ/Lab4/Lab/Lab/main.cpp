@@ -188,6 +188,7 @@ public:
         m_window = window;
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glEnable(GL_DEPTH_TEST);
+        glEnable(GL_MULTISAMPLE);
         buildShader();
         buildBodyMesh(calcPoints);
         m_projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.f);
@@ -201,18 +202,24 @@ public:
     void draw() override {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        mouse_rotate();
+        auto mouseOffset = mouse_rotate();
 
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0, 2.0, -10.0f));
-        model = glm::rotate(model, m_mouseOffset.x, glm::vec3(0.0f, 1.0f, 0.0f));
-        model = glm::rotate(model, -m_mouseOffset.y, glm::vec3(0.0f, 0.0f, 1.0f));
-        model = glm::scale(model, glm::vec3(0.01f));
+        model = glm::rotate(model, -mouseOffset.x, glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, mouseOffset.y, glm::vec3(0.0f, 0.0f, 1.0f));
+        model = glm::scale(model, glm::vec3(0.005f));
 
         m_shader->use();
         m_shader->setMat4("u_normal_mat", glm::transpose(glm::inverse(glm::mat3(model))));
         m_shader->setMat4("u_mv_mat", model);
         m_shader->setMat4("u_projection_mat", m_projection);
+        if (true) {
+            m_shader->setVec3("albedo", glm::vec3(1.0f, 0.0f, 0.0f));
+            m_shader->setFloat("metallic", 1.0);
+            m_shader->setFloat("roughness", 0.5);
+            m_shader->setFloat("ao", 0.1);
+        }
         m_bodyMesh->Draw(*m_shader);
     }
 
@@ -224,8 +231,9 @@ private:
     Mesh* m_bodyMesh;
     Shader* m_shader;
     glm::mat4 m_projection;
-    glm::vec2 m_prevMousePos;
+    glm::vec2 m_startMousePos;
     glm::vec2 m_mouseOffset;
+    bool is_rotating = false;
 
     void buildShader() {
         m_shader = new Shader("shaders/view_mode_v.shader", "shaders/view_mode_f.shader");
@@ -284,15 +292,27 @@ private:
         m_bodyMesh = new Mesh(vertices, indices, {});
     }
 
-    void mouse_rotate() {
+    glm::vec2 mouse_rotate() {
+        double xpos, ypos;
+        glfwGetCursorPos(m_window, &xpos, &ypos);
+        auto curMousePos = glm::vec2(xpos, ypos);
+
         if (glfwGetMouseButton(m_window, GLFW_MOUSE_BUTTON_LEFT) != GLFW_RELEASE)
         {
-            double xpos, ypos;
-            glfwGetCursorPos(m_window, &xpos, &ypos);
-            auto curMousePos = glm::vec2(xpos, ypos);
-            m_mouseOffset += (curMousePos - m_prevMousePos) * 0.01f;
-            m_prevMousePos = curMousePos;
+            if (!is_rotating) {
+                m_startMousePos = curMousePos;
+            }
+            is_rotating = true;
+            return m_mouseOffset + (m_startMousePos - curMousePos) * 0.01f;
         }
+        else {
+            if (is_rotating) {
+                m_mouseOffset += (m_startMousePos - curMousePos) * 0.01f;
+            }
+            is_rotating = false;
+        }
+
+        return m_mouseOffset;
     }
 };
 
@@ -310,7 +330,6 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
         }
     }
 }
-
 void reshape(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
@@ -384,32 +403,16 @@ int main()
 
     if (isOk)
     {
-        GLfloat p = 0.0;
-        const GLfloat delta_p = glm::pi<GLfloat>();
-        long long time_to_render_frame = 0.0;
-
         // Main loop until window closed or escape pressed.
         while (glfwGetKey(g_window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(g_window) == 0)
         {
-            auto t1 = std::chrono::high_resolution_clock::now();
-
-            //Animation.
-            p += time_to_render_frame * delta_p / 1000.0f;
-            if (p > 1024 * glm::pi<GLfloat>()) {
-                p -= 1024 * glm::pi<GLfloat>();
-            }
-
             // Draw scene.
-            g_scene->draw();
-            
+            g_scene->draw(); 
 
             // Swap buffers.
             glfwSwapBuffers(g_window);
             // Poll window events.
             glfwPollEvents();
-
-            auto t2 = std::chrono::high_resolution_clock::now();
-            time_to_render_frame = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
         }
     }
 

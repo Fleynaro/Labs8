@@ -33,36 +33,36 @@ R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(158,1): warning C4267: 'argument': conversio
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(275,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(221,1): warning C4305: 'argument': truncation from 'double' to 'float'
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(283,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(276,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(284,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(277,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(285,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(278,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(286,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(279,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(287,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(280,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(288,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(390,40): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
 MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
   Lab.vcxproj -> R:\Labs8\КГ\Lab4\Lab\x64\Debug\Lab.exe

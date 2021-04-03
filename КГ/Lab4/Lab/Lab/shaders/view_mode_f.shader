@@ -14,9 +14,10 @@ void main()
     vec3 E = vec3(0, 0, 0);
     vec3 L = vec3(5, 5, 0);
     vec3 l = normalize(v_pos - L);
-    float d = max(dot(n, -l), 0.1);
+    float d = max(dot(n, -l), 0.3);
     vec3 e = normalize(E - v_pos);
     vec3 h = normalize(-l + e);
     float s = pow(max(dot(n, h), 0.0), S) * 0.5;
-    o_color = vec4(color * d + s * vec3(1, 1, 1), 1);
+    vec3 final_color = color * d + s * vec3(1, 1, 1);
+    o_color = vec4(pow(final_color, vec3(1.0 / 2.2)), 1);
 }
