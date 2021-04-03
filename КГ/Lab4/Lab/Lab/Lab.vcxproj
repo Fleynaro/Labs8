@@ -576,6 +576,8 @@
     <None Include="glm\gtx\wrap.inl" />
     <None Include="shaders\edit_mode_f.shader" />
     <None Include="shaders\edit_mode_v.shader" />
+    <None Include="shaders\view_mode_f.shader" />
+    <None Include="shaders\view_mode_v.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -27,10 +27,12 @@ public:
 
 class EditModeScene : public IScene {
 public:
+    vector<Point2D> m_calcPoints;
+
     EditModeScene() {
         glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-        buildPointMesh();
         buildShader();
+        buildPointMesh();
     }
 
     ~EditModeScene() {
@@ -43,9 +45,17 @@ public:
 
     void draw() override {
         glClear(GL_COLOR_BUFFER_BIT);
-        glDisable(GL_MULTISAMPLE);
 
         auto projection = glm::ortho(0.0f, float(g_vpWidth), 0.0f, float(g_vpHeight), 0.1f, 100.0f);
+        if (m_curveMesh) {
+            glEnable(GL_MULTISAMPLE);
+            m_shader->use();
+            m_shader->setVec3("u_color", glm::vec3(0.7f, 0.0f, 0.0f));
+            m_shader->setMat4("u_mvp", projection);
+            m_curveMesh->Draw(*m_shader);
+        }
+
+        glDisable(GL_MULTISAMPLE);
         for (const auto& point : m_editPoints) {
             glm::mat4 model = glm::mat4(1.0f);
             model = glm::translate(model, glm::vec3(point.x, point.y, -1.0f));
@@ -64,14 +74,6 @@ public:
         m_shader->setVec3("u_color", glm::vec3(0.0f, 0.0f, 0.5f));
         m_shader->setMat4("u_mvp", projection * model);
         m_pointMesh->Draw(*m_shader);
-
-        if (m_curveMesh) {
-            glEnable(GL_MULTISAMPLE);
-            m_shader->use();
-            m_shader->setVec3("u_color", glm::vec3(0.7f, 0.0f, 0.0f));
-            m_shader->setMat4("u_mvp", projection);
-            m_curveMesh->Draw(*m_shader);
-        }
     }
 
     void mouse_callback(GLFWwindow* window, int button, int action, int mods) override {
@@ -91,7 +93,6 @@ private:
     Mesh* m_curveMesh = nullptr;
     Shader* m_shader;
     vector<Point2D> m_editPoints;
-    vector<Point2D> m_calcPoints;
     float m_curveWidth = 2.0f;
     
     void buildShader() {
@@ -181,6 +182,120 @@ private:
 
 IScene* g_scene = nullptr;
 
+class ViewModeScene : public IScene {
+public:
+    ViewModeScene(GLFWwindow* window, const vector<Point2D>& calcPoints) {
+        m_window = window;
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+        glEnable(GL_DEPTH_TEST);
+        buildShader();
+        buildBodyMesh(calcPoints);
+        m_projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.f);
+    }
+
+    ~ViewModeScene() {
+        delete m_bodyMesh;
+        delete m_shader;
+    }
+
+    void draw() override {
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        mouse_rotate();
+
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.0, 2.0, -10.0f));
+        model = glm::rotate(model, m_mouseOffset.x, glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, -m_mouseOffset.y, glm::vec3(0.0f, 0.0f, 1.0f));
+        model = glm::scale(model, glm::vec3(0.01f));
+
+        m_shader->use();
+        m_shader->setMat4("u_normal_mat", glm::transpose(glm::inverse(glm::mat3(model))));
+        m_shader->setMat4("u_mv_mat", model);
+        m_shader->setMat4("u_projection_mat", m_projection);
+        m_bodyMesh->Draw(*m_shader);
+    }
+
+    void mouse_callback(GLFWwindow* window, int button, int action, int mods) override {
+    }
+
+private:
+    GLFWwindow* m_window;
+    Mesh* m_bodyMesh;
+    Shader* m_shader;
+    glm::mat4 m_projection;
+    glm::vec2 m_prevMousePos;
+    glm::vec2 m_mouseOffset;
+
+    void buildShader() {
+        m_shader = new Shader("shaders/view_mode_v.shader", "shaders/view_mode_f.shader");
+    }
+
+    void buildBodyMesh(const vector<Point2D>& calcPoints, int repeatCount = 30) {
+        Vertex v;
+        vector<Vertex> vertices;
+        vertices.push_back(v);
+
+        for (size_t i = 1; i < calcPoints.size() - 1; i++) {
+            auto vec1 = calcPoints[i] - calcPoints[i - 1];
+            auto vec2 = calcPoints[i + 1] - calcPoints[i];
+            vec1.normalize();
+            vec2.normalize();
+            auto normal = vec1 + vec2;
+            normal.normalize();
+            //rotate on 90 degrees
+            swap(normal.x, normal.y);
+            normal.x *= -1.0f;
+
+            v.Position = glm::vec3(calcPoints[i].x, calcPoints[i].y, 0.0f);
+            v.Normal = glm::vec3(normal.x, normal.y, 0.0f);
+            vertices.push_back(v);
+        }
+
+        vertices[0].Position = glm::vec3(calcPoints[0].x, calcPoints[0].y, 0.0f);
+        vertices[0].Normal = vertices[1].Normal;
+        v.Position = glm::vec3(calcPoints[calcPoints.size() - 1].x, calcPoints[calcPoints.size() - 1].y, 0.0f);
+        v.Normal = vertices[vertices.size() - 1].Normal;
+        vertices.push_back(v);
+
+        for (size_t i = 1; i <= repeatCount; i++) {
+            glm::mat4 rotMat(1);
+            rotMat = glm::rotate(rotMat, glm::radians(360.0f * i / repeatCount), glm::vec3(1.0f, 0.0f, 0.0f));
+            for (size_t j = 0; j < calcPoints.size(); j++) {
+                v.Position = glm::vec3(rotMat * glm::vec4(vertices[j].Position, 1.0));
+                v.Normal = glm::vec3(rotMat * glm::vec4(vertices[j].Normal, 1.0));
+                vertices.push_back(v);
+            }
+        }
+
+        auto N = calcPoints.size();
+        vector<unsigned int> indices;
+        for (size_t i = 0; i < repeatCount; i++) {
+            for (size_t j = 0; j < N - 1; j++) {
+                indices.push_back((i + 1) * N + j);
+                indices.push_back((i + 1) * N + (j + 1));
+                indices.push_back(i * N + (j + 1));
+                indices.push_back(i * N + (j + 1));
+                indices.push_back(i * N + j);
+                indices.push_back((i + 1) * N + j);
+            }
+        }
+
+        m_bodyMesh = new Mesh(vertices, indices, {});
+    }
+
+    void mouse_rotate() {
+        if (glfwGetMouseButton(m_window, GLFW_MOUSE_BUTTON_LEFT) != GLFW_RELEASE)
+        {
+            double xpos, ypos;
+            glfwGetCursorPos(m_window, &xpos, &ypos);
+            auto curMousePos = glm::vec2(xpos, ypos);
+            m_mouseOffset += (curMousePos - m_prevMousePos) * 0.01f;
+            m_prevMousePos = curMousePos;
+        }
+    }
+};
+
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
     g_scene->mouse_callback(window, button, action, mods);
@@ -188,7 +303,10 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
     if (action == GLFW_PRESS) {
         if (button == GLFW_MOUSE_BUTTON_RIGHT)
         {
-
+            if (auto editModeScene = dynamic_cast<EditModeScene*>(g_scene)) {
+                g_scene = new ViewModeScene(window, editModeScene->m_calcPoints);
+                delete editModeScene;
+            }
         }
     }
 }

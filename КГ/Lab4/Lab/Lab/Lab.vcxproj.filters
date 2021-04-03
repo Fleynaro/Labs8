@@ -1290,5 +1290,7 @@
     </None>
     <None Include="shaders\edit_mode_v.shader" />
     <None Include="shaders\edit_mode_f.shader" />
+    <None Include="shaders\view_mode_f.shader" />
+    <None Include="shaders\view_mode_v.shader" />
   </ItemGroup>
 </Project>
