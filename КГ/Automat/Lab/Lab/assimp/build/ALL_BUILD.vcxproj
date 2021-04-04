@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F8F189FF-76C5-3B6C-9274-82CC1404D3A9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFileCXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckTypeSize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config-version.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp.pc.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-debug.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-release.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCXXCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeRCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeSystem.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindZLIB.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\PrecompiledHeader.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\cmake_uninstall.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake\HunterGate.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\config.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\revision.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFileCXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckTypeSize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config-version.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp.pc.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-debug.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-release.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCXXCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeRCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeSystem.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindZLIB.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\PrecompiledHeader.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\cmake_uninstall.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake\HunterGate.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\config.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\revision.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFileCXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckTypeSize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config-version.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp.pc.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-debug.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-release.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCXXCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeRCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeSystem.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindZLIB.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\PrecompiledHeader.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\cmake_uninstall.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake\HunterGate.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\config.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\revision.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFileCXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\CheckTypeSize.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config-version.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp-config.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimp.pc.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-debug.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets-release.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\assimpTargets.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeCXXCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeRCCompiler.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CMakeSystem.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindZLIB.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\PrecompiledHeader.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\cmake_uninstall.cmake.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake\HunterGate.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\config.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\revision.h.in;R:\Labs8\КГ\Automat\Lab\Lab\assimp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\ZERO_CHECK.vcxproj">
+      <Project>{57AF8A2D-444D-3E5C-84A5-D60880E9FA5C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\irrXML\IrrXML.vcxproj">
+      <Project>{CA0214B6-A997-3C7E-B088-5220E3E2B2FC}</Project>
+      <Name>IrrXML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\assimp.vcxproj">
+      <Project>{35863E30-1EE0-3DBB-B580-3A8314EAB846}</Project>
+      <Name>assimp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_cmd\assimp_cmd.vcxproj">
+      <Project>{26BFCEE5-FA0E-3608-8B92-DA48B425E0DF}</Project>
+      <Name>assimp_cmd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\assimp_viewer.vcxproj">
+      <Project>{530D8BBE-0620-3CFC-866D-CD282EC924D8}</Project>
+      <Name>assimp_viewer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\test\unit.vcxproj">
+      <Project>{30910A42-0FAB-3921-AC69-2F6BFF4EF24D}</Project>
+      <Name>unit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib\zlib.vcxproj">
+      <Project>{F2AA08EE-37F0-3DD9-95A9-664C9DBC53C0}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{0DC70C50-1684-3F45-B39E-EA4FCFAD1A6C}</Project>
+      <Name>zlibstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

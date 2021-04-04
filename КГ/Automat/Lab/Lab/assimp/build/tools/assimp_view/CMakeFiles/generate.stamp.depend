@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/FindDirectX.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/FindPkgMacros.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt

@@ -1,0 +1,11 @@
+﻿R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v150\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Lab.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+r:\labs8\кг\automat\lab\lab\shader.h(57): warning C4101: 'e': unreferenced local variable
+r:\labs8\кг\automat\lab\lab\mesh.h(86): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+r:\labs8\кг\automat\lab\lab\main.cpp(55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+r:\labs8\кг\automat\lab\lab\main.cpp(57): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+r:\labs8\кг\automat\lab\lab\main.cpp(59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+r:\labs8\кг\automat\lab\lab\main.cpp(91): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+r:\labs8\кг\automat\lab\lab\main.cpp(92): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+r:\labs8\кг\automat\lab\lab\main.cpp(97): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Lab.vcxproj -> R:\Labs8\КГ\Automat\Lab\x64\Debug\Automat.exe

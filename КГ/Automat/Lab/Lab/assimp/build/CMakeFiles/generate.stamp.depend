@@ -1,0 +1,45 @@
+# CMake generation dependency list for this directory.
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCInformation.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCXXInformation.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCommonLanguageInclude.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeGenericSystem.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeInitializeConfigs.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeLanguageInformation.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeParseArguments.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeRCInformation.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeSystemSpecificInformation.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CMakeSystemSpecificInitialize.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CheckFunctionExists.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CheckIncludeFile.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CheckIncludeFileCXX.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/CheckTypeSize.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/MSVC-C.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/MSVC-CXX.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/FindPackageMessage.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/FindPkgConfig.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC-C.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC-CXX.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows.cmake
+M:/Program Files/CMake/share/cmake-3.13/Modules/Platform/WindowsPaths.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/CMakeLists.txt
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/assimp-config-version.cmake.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/assimp-config.cmake.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/assimp.pc.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/assimpTargets-debug.cmake.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/assimpTargets-release.cmake.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/assimpTargets.cmake.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/3.13.2/CMakeCCompiler.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/3.13.2/CMakeRCCompiler.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/3.13.2/CMakeSystem.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/FindDirectX.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/FindPkgMacros.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/FindZLIB.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/PrecompiledHeader.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake-modules/cmake_uninstall.cmake.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/cmake/HunterGate.cmake
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/include/assimp/config.h.in
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/revision.h.in

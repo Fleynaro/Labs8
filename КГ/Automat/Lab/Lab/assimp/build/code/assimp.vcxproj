@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35863E30-1EE0-3DBB-B580-3A8314EAB846}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>assimp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp-vc141-mtd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp-vc141-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp-vc141-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp-vc141-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;EBUG:FULL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;EBUG:FULL;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Debug\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\contrib\zlib\Debug\zlibstaticd.lib;..\contrib\irrXML\Debug\IrrXMLd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/Debug/assimp-vc141-mtd.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/Debug/assimp-vc141-mtd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Release";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Release\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\contrib\zlib\Release\zlibstatic.lib;..\contrib\irrXML\Release\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/Release/assimp-vc141-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/Release/assimp-vc141-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="MinSizeRel";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"MinSizeRel\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\contrib\zlib\MinSizeRel\zlibstatic.lib;..\contrib\irrXML\MinSizeRel\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/MinSizeRel/assimp-vc141-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/MinSizeRel/assimp-vc141-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="RelWithDebInfo";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\rapidjson\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\unzip;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\irrXML;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\contrib\openddlparser\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\contrib\zlib\RelWithDebInfo\zlibstatic.lib;..\contrib\irrXML\RelWithDebInfo\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/RelWithDebInfo/assimp-vc141-mt.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/RelWithDebInfo/assimp-vc141-mt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindRT.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindRT.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindRT.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/code/CMakeLists.txt;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;M:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindRT.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Assimp.cpp" />
+    <ResourceCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\res\assimp.rc" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CApi\CInterfaceIOWrapper.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CApi\CInterfaceIOWrapper.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\BaseImporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\BaseProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\BaseProcess.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Importer.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\ScenePrivate.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\PostStepRegistry.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\ImporterRegistry.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\DefaultProgressHandler.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\DefaultIOStream.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\DefaultIOSystem.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\ZipArchiveIOSystem.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\PolyTools.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Importer.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\IFF.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\SGSpatialSort.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\VertexTriangleAdjacency.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\VertexTriangleAdjacency.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\SpatialSort.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\SceneCombiner.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\ScenePreprocessor.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\ScenePreprocessor.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\SkeletonMeshBuilder.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\SplitByBoneCountProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\SplitByBoneCountProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\StandardShapes.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\TargetAnimation.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\TargetAnimation.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\RemoveComments.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Subdivision.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\scene.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Bitmap.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Version.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\CreateAnimMesh.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\simd.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\simd.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Win32DebugLogStream.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\DefaultLogger.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\FileLogStream.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\StdOStreamLogStream.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Common\Exporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CApi\AssimpCExport.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\BlobIOSystem.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\CalcTangentsProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\CalcTangentsProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ComputeUVMappingProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ComputeUVMappingProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ConvertToLHProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ConvertToLHProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\EmbedTexturesProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\EmbedTexturesProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FindDegenerates.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FindDegenerates.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FindInstancesProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FindInstancesProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FindInvalidDataProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FindInvalidDataProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FixNormalsStep.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\FixNormalsStep.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\DropFaceNormalsProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\DropFaceNormalsProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\GenFaceNormalsProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\GenFaceNormalsProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\GenVertexNormalsProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\GenVertexNormalsProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\PretransformVertices.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\PretransformVertices.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ImproveCacheLocality.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ImproveCacheLocality.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\JoinVerticesProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\JoinVerticesProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\LimitBoneWeightsProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\LimitBoneWeightsProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\RemoveRedundantMaterials.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\RemoveRedundantMaterials.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\RemoveVCProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\RemoveVCProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\SortByPTypeProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\SortByPTypeProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\SplitLargeMeshes.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\SplitLargeMeshes.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\TextureTransform.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\TextureTransform.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\TriangulateProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\TriangulateProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ValidateDataStructure.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ValidateDataStructure.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\OptimizeGraph.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\OptimizeGraph.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\OptimizeMeshes.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\OptimizeMeshes.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\DeboneProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\DeboneProcess.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ProcessHelper.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ProcessHelper.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\MakeVerboseFormat.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\MakeVerboseFormat.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ScaleProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\ScaleProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\GenBoundingBoxesProcess.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\PostProcessing\GenBoundingBoxesProcess.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Material\MaterialSystem.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Material\MaterialSystem.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\STEPParser\STEPFileReader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\STEPParser\STEPFileReader.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\STEPParser\STEPFileEncoding.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\STEPParser\STEPFileEncoding.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter_Macro.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter_Node.hpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter_Geometry.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter_Material.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AMF\AMFImporter_Postprocess.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3DS\3DSConverter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3DS\3DSHelper.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3DS\3DSLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3DS\3DSLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AC\ACLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\AC\ACLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\ASE\ASELoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\ASE\ASELoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\ASE\ASEParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\ASE\ASEParser.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assbin\AssbinLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assbin\AssbinLoader.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\B3D\B3DImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\B3D\B3DImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\BVH\BVHLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\BVH\BVHLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaHelper.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaParser.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\DXF\DXFLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\DXF\DXFLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\DXF\DXFHelper.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CSM\CSMLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\CSM\CSMLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\HMP\HMPFileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\HMP\HMPLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\HMP\HMPLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\HMP\HalfLifeFileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Irr\IRRMeshLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Irr\IRRMeshLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Irr\IRRShared.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Irr\IRRShared.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Irr\IRRLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Irr\IRRLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOAnimation.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOAnimation.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOBLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOFileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWO\LWOMaterial.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWS\LWSLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\LWS\LWSLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD2\MD2FileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD2\MD2Loader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD2\MD2Loader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD2\MD2NormalTable.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD3\MD3FileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD3\MD3Loader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD3\MD3Loader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD5\MD5Loader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD5\MD5Loader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD5\MD5Parser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MD5\MD5Parser.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDC\MDCFileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDC\MDCLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDC\MDCLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDC\MDCNormalTable.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDL\MDLDefaultColorMap.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDL\MDLFileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDL\MDLLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDL\MDLLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MDL\MDLMaterialLoader.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\NFF\NFFLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\NFF\NFFLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\NDO\NDOLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\NDO\NDOLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OFF\OFFLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OFF\OFFLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileMtlImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileMtlImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjFileParser.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjTools.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreImporter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreStructs.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreParsingUtils.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreBinarySerializer.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreXmlSerializer.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreImporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreStructs.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreBinarySerializer.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreXmlSerializer.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ogre\OgreMaterial.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OpenGEX\OpenGEXImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OpenGEX\OpenGEXImporter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OpenGEX\OpenGEXStructs.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ply\PlyLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ply\PlyLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ply\PlyParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ply\PlyParser.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MS3D\MS3DLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MS3D\MS3DLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\COB\COBLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\COB\COBLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\COB\COBScene.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderDNA.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderDNA.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderDNA.inl" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderScene.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderScene.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderSceneGen.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderIntermediate.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderModifier.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderModifier.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderBMesh.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderBMesh.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderTessellator.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderTessellator.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderCustomData.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Blender\BlenderCustomData.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCReaderGen1_2x3.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCReaderGen2_2x3.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCReaderGen_2x3.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCUtil.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCUtil.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCGeometry.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCMaterial.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCProfile.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCCurve.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCBoolean.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\IFC\IFCOpenings.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\XGL\XGLLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\XGL\XGLLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXCompileConfig.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXParser.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXTokenizer.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXTokenizer.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXImportSettings.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXConverter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXConverter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXUtil.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXUtil.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXDocument.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXDocument.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXProperties.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXProperties.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXMeshGeometry.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXMeshGeometry.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXMaterial.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXModel.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXAnimation.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXNodeAttribute.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXDeformer.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXBinaryTokenizer.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXDocumentUtil.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXCommon.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3D\Q3DLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3D\Q3DLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3BSP\Q3BSPFileData.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3BSP\Q3BSPFileParser.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3BSP\Q3BSPFileParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3BSP\Q3BSPFileImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Q3BSP\Q3BSPFileImporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Raw\RawLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Raw\RawLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\SIB\SIBImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\SIB\SIBImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\SMD\SMDLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\SMD\SMDLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\STL\STLLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\STL\STLLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Terragen\TerragenLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Terragen\TerragenLoader.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Unreal\UnrealLoader.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Unreal\UnrealLoader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileHelper.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileParser.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter.hpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Geometry2D.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Geometry3D.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Group.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Light.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Macro.hpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Metadata.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Networking.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Node.hpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Postprocess.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Rendering.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Shape.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DImporter_Texturing.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\FIReader.hpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\FIReader.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DVocabulary.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFCommon.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFCommon.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFAsset.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFAsset.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFAssetWriter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFAssetWriter.inl" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFImporter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2Asset.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2Asset.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2AssetWriter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2AssetWriter.inl" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2Importer.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2Importer.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\D3MFImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\D3MFImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\D3MFOpcPackage.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\D3MFOpcPackage.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\3MFXmlTags.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDCpp14.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDImporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDImporter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDPmdParser.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDPmxParser.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDPmxParser.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\MMD\MMDVmdParser.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Step\STEPFile.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\StepFile\StepFileImporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\StepFile\StepFileImporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\StepFile\StepFileGen1.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\StepFile\StepFileGen2.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\StepFile\StepFileGen3.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Importer\StepFile\StepReaderGen.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3DS\3DSExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3DS\3DSExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assbin\AssbinExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assbin\AssbinExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assxml\AssxmlExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assxml\AssxmlExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Collada\ColladaExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Obj\ObjExporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OpenGEX\OpenGEXExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\OpenGEX\OpenGEXExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ply\PlyExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Ply\PlyExporter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXExportNode.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXExportNode.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXExportProperty.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\FBX\FBXExportProperty.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\STL\STLExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\STL\STLExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X\XFileExporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\X3D\X3DExporter.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF\glTFExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2Exporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\glTF2\glTF2Exporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\D3MFExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\3MF\D3MFExporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assjson\cencode.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assjson\cencode.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assjson\json_exporter.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assjson\mesh_splitter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Assjson\mesh_splitter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Step\StepExporter.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\Step\StepExporter.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\irrXMLWrapper.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\unzip\crypt.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\unzip\ioapi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\unzip\ioapi.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\unzip\unzip.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\unzip\unzip.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\common\shapes.cc" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\common\shapes.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\common\utils.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\cdt.cc" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\cdt.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\sweep.cc" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\sweep.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\clipper\clipper.hpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\clipper\clipper.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\code\OpenDDLParser.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\code\DDLNode.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\code\OpenDDLCommon.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\code\OpenDDLExport.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\code\Value.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\code\OpenDDLStream.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParser.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\OpenDDLExport.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\OpenDDLStream.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\DDLNode.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\openddlparser\include\openddlparser\Value.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcAdjacencyInfo.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcArithmeticCodec.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcArithmeticCodec.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcBinaryStream.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcCommon.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcDVEncodeParams.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcDynamicVectorDecoder.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcDynamicVectorEncoder.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcDynamicVector.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcFIFO.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcIndexedFaceSet.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcIndexedFaceSet.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcSC3DMCDecoder.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcSC3DMCDecoder.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcSC3DMCEncodeParams.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcSC3DMCEncoder.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcSC3DMCEncoder.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTimer.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTools.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTriangleFans.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTriangleFans.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTriangleListDecoder.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTriangleListDecoder.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTriangleListEncoder.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcTriangleListEncoder.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcVector.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\Open3DGC\o3dgcVector.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zip\src\miniz.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zip\src\zip.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zip\src\zip.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\anim.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\aabb.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\camera.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\color4.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\color4.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include\assimp\config.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\defs.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Defines.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\light.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\material.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\material.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\matrix3x3.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\matrix4x4.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\mesh.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\pbrmaterial.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\quaternion.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\scene.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\metadata.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\texture.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\types.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\vector2.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\vector2.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\vector3.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\vector3.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\version.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\cimport.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\cexport.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\DefaultIOStream.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\ZipArchiveIOSystem.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\SceneCombiner.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\fast_atof.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\qnan.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\BaseImporter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Hash.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\MemoryIOWrapper.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\ParsingUtils.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\StreamReader.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\StreamWriter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\StringComparison.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\StringUtils.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\SGSpatialSort.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\GenericProperty.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\SpatialSort.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\SkeletonMeshBuilder.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\SmoothingGroups.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\SmoothingGroups.inl" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\StandardShapes.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\RemoveComments.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Subdivision.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Vertex.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\LineSplitter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\TinyFormatter.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Profiler.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\LogAux.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Bitmap.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\XMLTools.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\IOStreamBuffer.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\CreateAnimMesh.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\MathFunctions.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Macros.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Exceptional.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\ByteSwapper.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\include\assimp\Compiler\pstdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\ZERO_CHECK.vcxproj">
+      <Project>{57AF8A2D-444D-3E5C-84A5-D60880E9FA5C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\irrXML\IrrXML.vcxproj">
+      <Project>{CA0214B6-A997-3C7E-B088-5220E3E2B2FC}</Project>
+      <Name>IrrXML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{0DC70C50-1684-3F45-B39E-EA4FCFAD1A6C}</Project>
+      <Name>zlibstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -3,11 +3,6 @@ R:\Labs8\КГ\Lab4\Lab\Lab\Shader.h(57,40): warning C4101: 'e': unreferenced loc
 R:\Labs8\КГ\Lab4\Lab\Lab\Mesh.h(91,1): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
 R:\Labs8\КГ\Lab4\Lab\Lab\tbezier\tbezier.h(177,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 R:\Labs8\КГ\Lab4\Lab\Lab\tbezier\tbezier.h(247,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(153,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=unsigned int
-          ]
 R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(154,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
@@ -33,22 +28,12 @@ R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(158,1): warning C4267: 'argument': conversio
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(221,1): warning C4305: 'argument': truncation from 'double' to 'float'
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(283,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(159,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(284,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=unsigned int
-          ]
-R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(285,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=unsigned int
-          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(224,1): warning C4305: 'argument': truncation from 'double' to 'float'
 R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(286,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
@@ -60,6 +45,21 @@ R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(287,1): warning C4267: 'argument': conversio
               _Ty=unsigned int
           ]
 R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(288,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(289,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(290,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned int
+          ]
+R:\Labs8\КГ\Lab4\Lab\Lab\main.cpp(291,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
           with
           [
               _Ty=unsigned int

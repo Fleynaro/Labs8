@@ -1,0 +1,174 @@
+Determining size of off64_t failed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_312df.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:56.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_312df.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_312df.dir\Debug\cmTC_312df.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_312df.dir\Debug\cmTC_312df.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_312df.dir\Debug\\" /Fd"cmTC_312df.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  OFF64_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_312df.dir\Debug\\" /Fd"cmTC_312df.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+  
+R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj" (целевой объект по умолчанию) (1) ->
+(Целевой объект ClCompile) -> 
+  R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+  R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+  R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+  R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+  R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: off64_t: необъявленный идентификатор [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_312df.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 5
+
+Прошло времени 00:00:00.52
+
+R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_423e5.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:57.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_423e5.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_423e5.dir\Debug\cmTC_423e5.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_423e5.dir\Debug\cmTC_423e5.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_423e5.dir\Debug\\" /Fd"cmTC_423e5.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "M:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_423e5.dir\Debug\\" /Fd"cmTC_423e5.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "M:\Program Files\CMake\share\cmake-3.13\Modules\CheckFunctionExists.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_423e5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_423e5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_423e5.lib" /MACHINE:X64  /machine:x64 cmTC_423e5.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: ёё√ыър эр эхЁрчЁх°хээ√щ тэх°эшщ ёшьтюы fseeko т ЇєэъЎшш main [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj]
+R:\Labs8\╩├\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_423e5.exe : fatal error LNK1120: эхЁрчЁх°хээ√ї тэх°эшї ¤ыхьхэЄют: 1 [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj]
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj" (целевой объект по умолчанию) (1) ->
+(Целевой объект Link) -> 
+  CheckFunctionExists.obj : error LNK2019: ёё√ыър эр эхЁрчЁх°хээ√щ тэх°эшщ ёшьтюы fseeko т ЇєэъЎшш main [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj]
+  R:\Labs8\╩├\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_423e5.exe : fatal error LNK1120: эхЁрчЁх°хээ√ї тэх°эшї ¤ыхьхэЄют: 1 [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_423e5.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 2
+
+Прошло времени 00:00:01.17
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_88b3c.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:58.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_88b3c.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_88b3c.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_88b3c.dir\Debug\cmTC_88b3c.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_88b3c.dir\Debug\cmTC_88b3c.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88b3c.dir\Debug\\" /Fd"cmTC_88b3c.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88b3c.dir\Debug\\" /Fd"cmTC_88b3c.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_88b3c.vcxproj]
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_88b3c.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+
+Ошибка сборки.
+
+"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_88b3c.vcxproj" (целевой объект по умолчанию) (1) ->
+(Целевой объект ClCompile) -> 
+  R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_88b3c.vcxproj]
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.54
+
+

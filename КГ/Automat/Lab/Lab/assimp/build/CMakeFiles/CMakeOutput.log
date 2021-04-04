@@ -1,0 +1,495 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine ���ᨨ 16.8.2+25e4d540b ��� .NET Framework
+(C) ��௮��� �������� (Microsoft Corporation). �� �ࠢ� ���饭�.
+
+���ઠ ���� 04.04.2021 21:17:32.
+�஥�� "R:\Labs8\��\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CompilerIdC\CompilerIdC.vcxproj" � 㧫� 1 (楫��� ��ꥪ�� �� 㬮�砭��).
+PrepareForBuild:
+  �������� ��⠫��� "Debug\".
+  �������� ��⠫��� "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  �������� "Debug\CompilerIdC.tlog\unsuccessfulbuild", ⠪ ��� �뫮 ������ "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> R:\Labs8\��\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\cl.exe
+FinalizeBuildStatus:
+  ���� "Debug\CompilerIdC.tlog\unsuccessfulbuild" 㤠�����.
+  ���饭�� � "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+���ઠ �஥�� "R:\Labs8\��\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CompilerIdC\CompilerIdC.vcxproj" �����襭� (楫��� ��ꥪ�� �� 㬮�砭��).
+
+���ઠ �ᯥ譮 �����襭�.
+    �।�०�����: 0
+    �訡��: 0
+
+��諮 �६��� 00:00:01.67
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine ���ᨨ 16.8.2+25e4d540b ��� .NET Framework
+(C) ��௮��� �������� (Microsoft Corporation). �� �ࠢ� ���饭�.
+
+���ઠ ���� 04.04.2021 21:17:34.
+�஥�� "R:\Labs8\��\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CompilerIdCXX\CompilerIdCXX.vcxproj" � 㧫� 1 (楫��� ��ꥪ�� �� 㬮�砭��).
+PrepareForBuild:
+  �������� ��⠫��� "Debug\".
+  �������� ��⠫��� "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  �������� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", ⠪ ��� �뫮 ������ "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> R:\Labs8\��\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\cl.exe
+FinalizeBuildStatus:
+  ���� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" 㤠�����.
+  ���饭�� � "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+���ઠ �஥�� "R:\Labs8\��\Automat\Lab\Lab\assimp\build\CMakeFiles\3.13.2\CompilerIdCXX\CompilerIdCXX.vcxproj" �����襭� (楫��� ��ꥪ�� �� 㬮�砭��).
+
+���ઠ �ᯥ譮 �����襭�.
+    �।�०�����: 0
+    �訡��: 0
+
+��諮 �६��� 00:00:01.25
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_fc2a2.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:36.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_fc2a2.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_fc2a2.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_fc2a2.dir\Debug\cmTC_fc2a2.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_fc2a2.dir\Debug\cmTC_fc2a2.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fc2a2.dir\Debug\\" /Fd"cmTC_fc2a2.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  testCCompiler.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fc2a2.dir\Debug\\" /Fd"cmTC_fc2a2.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_fc2a2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_fc2a2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_fc2a2.lib" /MACHINE:X64  /machine:x64 cmTC_fc2a2.dir\Debug\testCCompiler.obj
+  cmTC_fc2a2.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_fc2a2.exe
+FinalizeBuildStatus:
+  Файл "cmTC_fc2a2.dir\Debug\cmTC_fc2a2.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_fc2a2.dir\Debug\cmTC_fc2a2.tlog\cmTC_fc2a2.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_fc2a2.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.59
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_6c9cd.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:38.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_6c9cd.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_6c9cd.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_6c9cd.dir\Debug\cmTC_6c9cd.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_6c9cd.dir\Debug\cmTC_6c9cd.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6c9cd.dir\Debug\\" /Fd"cmTC_6c9cd.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6c9cd.dir\Debug\\" /Fd"cmTC_6c9cd.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_6c9cd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_6c9cd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_6c9cd.lib" /MACHINE:X64  /machine:x64 cmTC_6c9cd.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_6c9cd.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_6c9cd.exe
+FinalizeBuildStatus:
+  Файл "cmTC_6c9cd.dir\Debug\cmTC_6c9cd.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_6c9cd.dir\Debug\cmTC_6c9cd.tlog\cmTC_6c9cd.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_6c9cd.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.37
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_f8acf.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:40.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_f8acf.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_f8acf.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_f8acf.dir\Debug\cmTC_f8acf.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_f8acf.dir\Debug\cmTC_f8acf.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f8acf.dir\Debug\\" /Fd"cmTC_f8acf.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\feature_tests.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  feature_tests.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f8acf.dir\Debug\\" /Fd"cmTC_f8acf.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\feature_tests.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_f8acf.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_f8acf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_f8acf.lib" /MACHINE:X64  /machine:x64 cmTC_f8acf.dir\Debug\feature_tests.obj
+  cmTC_f8acf.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_f8acf.exe
+FinalizeBuildStatus:
+  Файл "cmTC_f8acf.dir\Debug\cmTC_f8acf.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_f8acf.dir\Debug\cmTC_f8acf.tlog\cmTC_f8acf.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_f8acf.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.31
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_fd233.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:42.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_fd233.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_fd233.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_fd233.dir\Debug\cmTC_fd233.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_fd233.dir\Debug\cmTC_fd233.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fd233.dir\Debug\\" /Fd"cmTC_fd233.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fd233.dir\Debug\\" /Fd"cmTC_fd233.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_fd233.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_fd233.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_fd233.lib" /MACHINE:X64  /machine:x64 cmTC_fd233.dir\Debug\testCXXCompiler.obj
+  cmTC_fd233.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_fd233.exe
+FinalizeBuildStatus:
+  Файл "cmTC_fd233.dir\Debug\cmTC_fd233.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_fd233.dir\Debug\cmTC_fd233.tlog\cmTC_fd233.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_fd233.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.32
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_30aea.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:44.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_30aea.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_30aea.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_30aea.dir\Debug\cmTC_30aea.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_30aea.dir\Debug\cmTC_30aea.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_30aea.dir\Debug\\" /Fd"cmTC_30aea.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_30aea.dir\Debug\\" /Fd"cmTC_30aea.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "M:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_30aea.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_30aea.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_30aea.lib" /MACHINE:X64  /machine:x64 cmTC_30aea.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_30aea.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_30aea.exe
+FinalizeBuildStatus:
+  Файл "cmTC_30aea.dir\Debug\cmTC_30aea.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_30aea.dir\Debug\cmTC_30aea.tlog\cmTC_30aea.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_30aea.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.38
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_1a2fc.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:46.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_1a2fc.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_1a2fc.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_1a2fc.dir\Debug\cmTC_1a2fc.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_1a2fc.dir\Debug\cmTC_1a2fc.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1a2fc.dir\Debug\\" /Fd"cmTC_1a2fc.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\feature_tests.cxx"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  feature_tests.cxx
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1a2fc.dir\Debug\\" /Fd"cmTC_1a2fc.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\feature_tests.cxx"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_1a2fc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_1a2fc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_1a2fc.lib" /MACHINE:X64  /machine:x64 cmTC_1a2fc.dir\Debug\feature_tests.obj
+  cmTC_1a2fc.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_1a2fc.exe
+FinalizeBuildStatus:
+  Файл "cmTC_1a2fc.dir\Debug\cmTC_1a2fc.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_1a2fc.dir\Debug\cmTC_1a2fc.tlog\cmTC_1a2fc.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_1a2fc.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.42
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_b5e57.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:50.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_b5e57.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_b5e57.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_b5e57.dir\Debug\cmTC_b5e57.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_b5e57.dir\Debug\cmTC_b5e57.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5e57.dir\Debug\\" /Fd"cmTC_b5e57.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5e57.dir\Debug\\" /Fd"cmTC_b5e57.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_b5e57.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_b5e57.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_b5e57.lib" /MACHINE:X64  /machine:x64 cmTC_b5e57.dir\Debug\CheckIncludeFile.obj
+  cmTC_b5e57.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_b5e57.exe
+FinalizeBuildStatus:
+  Файл "cmTC_b5e57.dir\Debug\cmTC_b5e57.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_b5e57.dir\Debug\cmTC_b5e57.tlog\cmTC_b5e57.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_b5e57.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.49
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_ee5a8.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:52.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_ee5a8.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_ee5a8.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_ee5a8.dir\Debug\cmTC_ee5a8.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_ee5a8.dir\Debug\cmTC_ee5a8.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee5a8.dir\Debug\\" /Fd"cmTC_ee5a8.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee5a8.dir\Debug\\" /Fd"cmTC_ee5a8.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_ee5a8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_ee5a8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_ee5a8.lib" /MACHINE:X64  /machine:x64 cmTC_ee5a8.dir\Debug\CheckIncludeFile.obj
+  cmTC_ee5a8.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_ee5a8.exe
+FinalizeBuildStatus:
+  Файл "cmTC_ee5a8.dir\Debug\cmTC_ee5a8.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_ee5a8.dir\Debug\cmTC_ee5a8.tlog\cmTC_ee5a8.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_ee5a8.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.34
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_79fce.vcxproj" "/p:Configuration=Debug" "/p:Platform=x64" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine версии 16.8.2+25e4d540b для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 04.04.2021 21:17:54.
+Проект "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_79fce.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_79fce.dir\Debug\".
+  Создание каталога "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_79fce.dir\Debug\cmTC_79fce.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_79fce.dir\Debug\cmTC_79fce.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79fce.dir\Debug\\" /Fd"cmTC_79fce.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.16.27045 для x64
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_79fce.dir\Debug\\" /Fd"cmTC_79fce.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+Link:
+  R:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_79fce.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_79fce.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/CMakeFiles/CMakeTmp/Debug/cmTC_79fce.lib" /MACHINE:X64  /machine:x64 cmTC_79fce.dir\Debug\CheckIncludeFile.obj
+  cmTC_79fce.vcxproj -> R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\Debug\cmTC_79fce.exe
+FinalizeBuildStatus:
+  Файл "cmTC_79fce.dir\Debug\cmTC_79fce.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_79fce.dir\Debug\cmTC_79fce.tlog\cmTC_79fce.lastbuildstate".
+Сборка проекта "R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\CMakeFiles\CMakeTmp\cmTC_79fce.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.36
+
+

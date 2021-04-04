@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{530D8BBE-0620-3CFC-866D-CD282EC924D8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>assimp_viewer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp_viewer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp_viewerd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp_viewer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp_viewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp_viewer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp_viewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp_viewer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp_viewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;EBUG:FULL;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;EBUG:FULL;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -E copy_if_different R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/Debug/assimp-vc141-mtd.dll R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\code\Debug\assimp-vc141-mtd.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3d9.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3dx9.lib;comctl32.lib;winmm.lib;..\..\contrib\zlib\Debug\zlibstaticd.lib;..\..\contrib\irrXML\Debug\IrrXMLd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build;R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/Debug/assimp_viewerd.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/Debug/assimp_viewerd.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -E copy_if_different R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/Release/assimp-vc141-mt.dll R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\code\Release\assimp-vc141-mt.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3d9.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3dx9.lib;comctl32.lib;winmm.lib;..\..\contrib\zlib\Release\zlibstatic.lib;..\..\contrib\irrXML\Release\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build;R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/Release/assimp_viewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/Release/assimp_viewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -E copy_if_different R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/MinSizeRel/assimp-vc141-mt.dll R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\code\MinSizeRel\assimp-vc141-mt.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3d9.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3dx9.lib;comctl32.lib;winmm.lib;..\..\contrib\zlib\MinSizeRel\zlibstatic.lib;..\..\contrib\irrXML\MinSizeRel\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build;R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/MinSizeRel/assimp_viewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/MinSizeRel/assimp_viewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build;R:\Labs8\КГ\Automat\Lab\Lab\assimp\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code;R:\Labs8\КГ\Automat\Lab\Lab\assimp\.;R:\Labs8\КГ\Automat\Lab\Lab\assimp\contrib\zlib;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\code\..\include;R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -E copy_if_different R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/code/RelWithDebInfo/assimp-vc141-mt.dll R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\code\RelWithDebInfo\assimp-vc141-mt.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3d9.lib;M:\Program Files (x86)\Microsoft DirectX SDK (August 2006)\Lib\x64\d3dx9.lib;comctl32.lib;winmm.lib;..\..\contrib\zlib\RelWithDebInfo\zlibstatic.lib;..\..\contrib\irrXML\RelWithDebInfo\IrrXML.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build;R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/$(Configuration);/lib;/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/RelWithDebInfo/assimp_viewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/RelWithDebInfo/assimp_viewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"M:\Program Files\CMake\bin\cmake.exe" -SR:/Labs8/КГ/Automat/Lab/Lab/assimp -BR:/Labs8/КГ/Automat/Lab/Lab/assimp/build --check-stamp-file R:/Labs8/КГ/Automat/Lab/Lab/assimp/build/tools/assimp_view/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:/Labs8/КГ/Automat/Lab/Lab/assimp/tools/assimp_view/CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindDirectX.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\cmake-modules\FindPkgMacros.cmake;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\tools\assimp_view\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\AnimEvaluator.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\Background.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\Display.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\HelpDialog.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\Input.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\LogDisplay.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\LogWindow.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\Material.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\MeshRenderer.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\MessageProc.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\Normals.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\SceneAnimator.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\Shaders.cpp" />
+    <ClInclude Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\assimp_view.h" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\assimp_view.cpp" />
+    <ClCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\stdafx.cpp" />
+    <ResourceCompile Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\assimp_view.rc" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\banner.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\banner_pure.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\base_anim.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\base_display.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\base_inter.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\base_rendering.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\base_stats.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\fx.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\n.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\root.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\tx.bmp" />
+    <None Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\tools\assimp_view\txi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\ZERO_CHECK.vcxproj">
+      <Project>{57AF8A2D-444D-3E5C-84A5-D60880E9FA5C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\irrXML\IrrXML.vcxproj">
+      <Project>{CA0214B6-A997-3C7E-B088-5220E3E2B2FC}</Project>
+      <Name>IrrXML</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\code\assimp.vcxproj">
+      <Project>{35863E30-1EE0-3DBB-B580-3A8314EAB846}</Project>
+      <Name>assimp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="R:\Labs8\КГ\Automat\Lab\Lab\assimp\build\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{0DC70C50-1684-3F45-B39E-EA4FCFAD1A6C}</Project>
+      <Name>zlibstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

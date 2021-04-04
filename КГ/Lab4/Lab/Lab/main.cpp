@@ -9,6 +9,7 @@
 #include <glm/ext/matrix_clip_space.hpp> // glm::perspective
 #include <glm/ext/scalar_constants.hpp> // glm::pi
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/gtx/string_cast.hpp>
 #pragma comment(lib, "glfw3.lib")
 #pragma comment(lib, "glew32.lib")
 #pragma comment(lib, "opengl32.lib")
@@ -210,8 +211,10 @@ public:
         model = glm::rotate(model, mouseOffset.y, glm::vec3(0.0f, 0.0f, 1.0f));
         model = glm::scale(model, glm::vec3(0.005f));
 
+        //auto printed_model_mat = glm::to_string(model);
+
         m_shader->use();
-        m_shader->setMat4("u_normal_mat", glm::transpose(glm::inverse(glm::mat3(model))));
+        m_shader->setMat3("u_normal_mat", glm::transpose(glm::inverse(glm::mat3(model))));
         m_shader->setMat4("u_mv_mat", model);
         m_shader->setMat4("u_projection_mat", m_projection);
         if (true) {
