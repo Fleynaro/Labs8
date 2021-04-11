@@ -4,10 +4,63 @@ from glob import glob
 from lab8 import process_image
 import pickle
 import torch
+import torch.nn as nn
 import random
 
 
 N = 0
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+
+def resize(img):
+    return cv2.resize(img, (224, 224))
+
+
+def resize2(img):
+    return img
+
+
+class AlexNet(torch.nn.Module):
+    def __init__(self, symbols):
+        super(AlexNet, self).__init__()
+
+        self.symbols = symbols
+
+        self.features = nn.Sequential(
+            nn.Conv2d(1, 64, kernel_size=11, stride=4, padding=2),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=3, stride=2),
+            nn.Conv2d(64, 192, kernel_size=5, padding=2),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=3, stride=2),
+            nn.Conv2d(192, 384, kernel_size=3, padding=1),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(384, 256, kernel_size=3, padding=1),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(256, 256, kernel_size=3, padding=1),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=3, stride=2),
+        )
+        self.avgpool = nn.AdaptiveAvgPool2d((6, 6))
+        self.classifier = nn.Sequential(
+            nn.Dropout(),
+            nn.Linear(256 * 6 * 6, 4096),
+            nn.ReLU(inplace=True),
+            nn.Dropout(),
+            nn.Linear(4096, 4096),
+            nn.ReLU(inplace=True),
+            nn.Linear(4096, len(symbols)),
+        )
+
+    def forward(self, x):
+        x = self.features(x)
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.classifier(x)
+        return x
+
+    def predict(self, img):
+        return self.symbols[self.forward(img.unsqueeze(0).unsqueeze(0)).argmax(dim=1).item()]
 
 
 class LeNet5(torch.nn.Module):
@@ -75,15 +128,16 @@ def load_symbols_dataset(dir_path):
         for filename in filenames:
             img = cv2.imread(filename, cv2.IMREAD_UNCHANGED).astype(float) / 255.0
             # = np.eye(1, len(symbol_files), k=symbol_idx, dtype=np.float32).reshape(-1)
-            X.append(img)
+            X.append(resize(img))
             y.append(symbol_idx)
     return torch.Tensor(X).unsqueeze(1), torch.Tensor(y).long(), symbols
 
 
 def train_model(X, y, symbols, batch_size=128, epochs=40, k=0.8):
-    lenet5 = LeNet5(symbols)
+    model = AlexNet(symbols)
+    model = model.to(device)
     loss = torch.nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(lenet5.parameters(), lr=1.0e-3)
+    optimizer = torch.optim.Adam(model.parameters(), lr=1.0e-3)
 
     # shuffle
     perm_idxs = np.random.permutation(len(X))
@@ -99,6 +153,9 @@ def train_model(X, y, symbols, batch_size=128, epochs=40, k=0.8):
     test_accuracy_history = []
     test_loss_history = []
 
+    X_test = X_test.to(device)
+    y_test = y_test.to(device)
+
     for epoch in range(epochs):
         order = np.random.permutation(len(X_train))
         for start_index in range(0, len(X_train), batch_size):
@@ -106,22 +163,22 @@ def train_model(X, y, symbols, batch_size=128, epochs=40, k=0.8):
 
             batch_indexes = order[start_index:start_index + batch_size]
 
-            X_batch = X_train[batch_indexes]
-            y_batch = y_train[batch_indexes]
+            X_batch = X_train[batch_indexes].to(device)
+            y_batch = y_train[batch_indexes].to(device)
 
-            preds = lenet5.forward(X_batch)
+            preds = model.forward(X_batch)
             loss_value = loss(preds, y_batch)
             loss_value.backward()
 
             optimizer.step()
 
-        test_preds = lenet5.forward(X_test)
+        test_preds = model.forward(X_test)
         test_loss_history.append(loss(test_preds, y_test).data.cpu())
 
         accuracy = (test_preds.argmax(dim=1) == y_test).float().mean().data.cpu()
         test_accuracy_history.append(accuracy)
         print(accuracy)
-    return lenet5
+    return model
 
 
 def save_model(model, file):
@@ -133,7 +190,7 @@ def load_model(file):
 
 
 if __name__ == "__main__":
-    N = 28
+    N = 100
 
     # a) обучение
     if True:
@@ -148,7 +205,7 @@ if __name__ == "__main__":
         preds = []
         for img_file in glob(f"predict\\*"):
             img = process_image(cv2.imread(img_file, cv2.IMREAD_UNCHANGED), N).astype(float) / 255.0
-            img = torch.Tensor(img)
+            img = torch.Tensor(resize(img)).to(device)
             pred_symbol = model.predict(img)
             preds.append((img_file.split('\\')[-1], pred_symbol))
 
