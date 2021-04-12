@@ -12,11 +12,11 @@ N = 0
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 
-def resize(img):
+def resize2(img):
     return cv2.resize(img, (224, 224))
 
 
-def resize2(img):
+def resize(img):
     return img
 
 
@@ -71,19 +71,19 @@ class LeNet5(torch.nn.Module):
 
         self.conv1 = torch.nn.Conv2d(
             in_channels=1, out_channels=6, kernel_size=5, padding=2)
-        self.act1 = torch.nn.Tanh()
+        self.act1 = torch.nn.ReLU()
         self.pool1 = torch.nn.AvgPool2d(kernel_size=2, stride=2)
 
         self.conv2 = torch.nn.Conv2d(
             in_channels=6, out_channels=16, kernel_size=5, padding=0)
-        self.act2 = torch.nn.Tanh()
+        self.act2 = torch.nn.ReLU()
         self.pool2 = torch.nn.AvgPool2d(kernel_size=2, stride=2)
 
         self.fc1 = torch.nn.Linear(5 * 5 * 16, 200)
-        self.act3 = torch.nn.Tanh()
+        self.act3 = torch.nn.ReLU()
 
         self.fc2 = torch.nn.Linear(200, 120)
-        self.act4 = torch.nn.Tanh()
+        self.act4 = torch.nn.ReLU()
 
         self.fc3 = torch.nn.Linear(120, len(symbols))
 
@@ -133,8 +133,8 @@ def load_symbols_dataset(dir_path):
     return torch.Tensor(X).unsqueeze(1), torch.Tensor(y).long(), symbols
 
 
-def train_model(X, y, symbols, batch_size=128, epochs=40, k=0.8):
-    model = AlexNet(symbols)
+def train_model(X, y, symbols, batch_size=64, epochs=100, k=0.8):
+    model = LeNet5(symbols)
     model = model.to(device)
     loss = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=1.0e-3)
@@ -190,7 +190,7 @@ def load_model(file):
 
 
 if __name__ == "__main__":
-    N = 100
+    N = 28
 
     # a) обучение
     if True:
